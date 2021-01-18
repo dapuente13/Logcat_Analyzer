@@ -31,13 +31,14 @@ Vamos a necesitar:
 
 ### Preparación del entorno Android 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+Antes de instalar la aplicación debemos preparar nuestro dispositivo Android para aprovechar todas sus funcionalidades. 
+Para poder tener acceso a todos los logs de logcat, se debe conceder el siguiente permiso a la aplicación:
 
 ```
-Da un ejemplo
+android.permission.READ_LOGS
 ```
+
+Este permiso es un tanto especial debido a su potencial peligrosidad en manos ajenas, es por eso que el permiso _Read_Logs_ sólo lo tienen las aplicaciones que forman parte del firmware del sistema.
 
 _Y repite_
 

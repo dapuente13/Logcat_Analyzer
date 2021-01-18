@@ -4,19 +4,26 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 ## Índice
 
+- Sobre el contenido del repositorio
 - Comenzando
 - Pre-requisitos
-- Sobre el contenido del repositorio
-- Preparación del entorno Android
+- Preparación del entorno Android (opcional)
 - Funcionamiento de la aplicación
 - Spark streaming
+
+## Sobre el contenido del repositorio
+
+Este repositorio está compuesto por 4 directorios principales y el archivo .apk instalable en Android:
+
+- Android: Aquí encontrarás el proyecto de Android Studio entero con todos los ficheros que hemos obtenido al hacer build.
+- src: Este directorio hace la función de acceso directo a los ficheros más importantes de _Android_. Aquí se almacenan las clases java de la app, los layout y el AndroidManifest.xml. Este último archivo recoge entre otras cosas los permisos que nuestra aplicación pide a Android.
+- .apk: Este es el aplicación que se debe instalar en el dispositivo Android.
+- spark: Aquí recogemos los scripts necesarios para ejecutar en Apache Spark y conseguir enviar los logs por streaming.
+- res: Este es un directorio donde almacenamos recursos necesarios para este repositorio. El usuario no debe prestar atención a este directorio.
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán entender el código del repositorio y obtener una copia del proyecto en funcionamiento en tu máquina local._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Pre-requisitos 📋
 
@@ -30,7 +37,7 @@ Vamos a necesitar:
 - Instancia Ubuntu 12 con Spark
 
 
-### Preparación del entorno Android 🔧
+### Preparación del entorno Android (opcional) 🔧
 
 Los siguientes pasos son opcionales, para aquell@s que quieran hacer un análisis de todos los logs que lanza nuestro dispositivo Android.
 

@@ -53,6 +53,18 @@ Estos son los pasos a seguir:
 ![OpcionesDesarrollador1](/res/img/OpcionesDesarrollador1.png)
 
 Dirígete a la sección _Acerca del teléfono_ situada al final de los ajustes de Android.
+Una vez ahí, debes pulsar 7 veces sobre el apartado _Número de compilación_ (o _Versión del Kernel_ depende del dispositivo) hasta que salga un pop-up que te confirmará que las opciones de desarrollador están ya activadas.
+Al volver a la ventana de ajustes, ahora veremos la sección de Opciones de Desarrollador.
+
+### 2. Descargar ADB en el PC
+
+Descarga SDK para Windows: https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=es-419
+
+Sigue el asistente de instalación e instala todos los paquetes.
+Al final de la guía podremos desinstalar Android Studio si queremos. 
+
+
+### 3. Conceder permisos
 
 
 

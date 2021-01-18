@@ -57,13 +57,16 @@ Una vez ahí, debes pulsar 7 veces sobre el apartado _Número de compilación_ (
 Al volver a la ventana de ajustes, ahora veremos la sección de Opciones de Desarrollador.
 
 ### 2. Descargar ADB en el PC
-
+![ADB_Download](/res/img/ADB_Download.PNG)
 Descarga SDK para Windows/macOS/Linux: https://developer.android.com/studio/releases/platform-tools
 
-
 ### 3. Conceder permisos
+- Conecta tu teléfono via USB al PC.
+- Dentro de _Opciones de Desarrollador_, activa la _Depuración por USB_. Te saldrá un mensaje pidiendo tu confirmación, pulsa _OK_.
+![USB_Debug](/res/img/USB_Debug.png)
 
-
+- En el PC, extrae el contendio del .zip que te has descargado previamente con el ADB y abre una consola dentro de la carpeta _platform-tools_.
+![CMD_P](/res/img/CMD_P.png)
 
 _Y repite_
 

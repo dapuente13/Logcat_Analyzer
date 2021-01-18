@@ -38,7 +38,20 @@ Para poder tener acceso a todos los logs de logcat, se debe conceder el siguient
 android.permission.READ_LOGS
 ```
 
-Este permiso es un tanto especial debido a su potencial peligrosidad en manos ajenas, es por eso que el permiso _Read_Logs_ sólo lo tienen las aplicaciones que forman parte del firmware del sistema.
+Este permiso es un tanto especial debido a su potencial peligrosidad en manos ajenas, es por eso que el permiso _Read_Logs_ sólo lo tienen las aplicaciones que forman parte del firmware del sistema. Para conseguir que nuestra aplicación se beneficie de este permiso, tenemos dos opciones:
+### 1. Rootear el dispositivo Android
+Es una vía muy poco aconsejable por la dificultad y la peligrosidad que conlleva tener acceso root, por no hablar de las incompatibilidad, actualizaciones y posibles pérdidas de memoria.
+
+### 2. Utilizar ADB
+Por la sencillez a la hora de utilizar el Android Debug Bridge, vamos a utilizar este método. ADB es una herramienta de línea de comandos que nos permitirá comunicarnos con nuestro móvil a través de una consola desde el PC. El comando adb permite realizar una variedad de accioens en el dispositivo, como instalar y depurar apps, y proporciona acceso a una shell de Unix que puedes usar para ejecutar distintos comandos en un dispositivo. 
+
+En este caso, usaremos el ADB para conceder permisos a nuestra app.
+
+Estos son los pasos a seguir:
+
+#### 1. Activar opciones de desarrollador
+
+
 
 _Y repite_
 

@@ -15,9 +15,9 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 Este repositorio está compuesto por 4 directorios principales y el archivo .apk instalable en Android:
 
-- Android: Aquí encontrarás el proyecto de Android Studio entero con todos los ficheros que hemos obtenido al hacer build.
+- Android: Aquí encontrarás el proyecto de Android Studio entero con todos los ficheros que hemos obtenido al hacer build. Es necesario por si se quiere modificar o construir otra aplicación en el IDE de Android.
 - src: Este directorio hace la función de acceso directo a los ficheros más importantes de _Android_. Aquí se almacenan las clases java de la app, los layout y el AndroidManifest.xml. Este último archivo recoge entre otras cosas los permisos que nuestra aplicación pide a Android.
-- .apk: Este es el aplicación que se debe instalar en el dispositivo Android.
+- .apk: Esta es el aplicación que se debe instalar en el dispositivo Android.
 - spark: Aquí recogemos los scripts necesarios para ejecutar en Apache Spark y conseguir enviar los logs por streaming.
 - res: Este es un directorio donde almacenamos recursos necesarios para este repositorio. El usuario no debe prestar atención a este directorio.
 

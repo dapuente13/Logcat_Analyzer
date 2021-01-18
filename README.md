@@ -93,16 +93,26 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 
 <img src="/res/img/6.png" width="300" />
 
-#### 1. En este campo ingresaremos la dirección IP a la que queremos conectarnos
-#### 2. De igual forma, en este campo especificamos el puerto del servidor
-#### 3. Aquí tenemos la opción de añadir palabras clave para poder filtrar los logs
+#### 1. En este campo ingresaremos la dirección IP a la que queremos conectarnos.
+#### 2. De igual forma, en este campo especificamos el puerto del servidor.
+#### 3. Aquí tenemos la opción de añadir palabras clave para poder filtrar los logs. Las keywords deben estar separadas por comas.
 #### 4. El botón _SYSTEM APPS_ desplegará los paquetes del sistema. Aquellos paquetes seleccionados se añadiran al filtro.
 #### 5. El botón _USER APPS_ desplegará los paquetes de las aplicaciones instaladas por el usuario. Aquellas aplicaciones seleccionadas se añadiran al filtro.
-#### 6. El _STATUS_ mostrará el estado de la conexión con el servidor (OFFLINE / RUNNING / STOPPED)
+#### 6. El _STATUS_ mostrará el estado de la conexión con el servidor (OFFLINE / RUNNING / STOPPED).
 #### 7. El botón _START_ conectará el dispositivo con el servidor seleccionado.
 #### 8. El botón _STOP_ detendrá la conexión.
 
+
+- Introduciendo la keyword _cam_:
 <img src="/res/img/2.png" width="300" />
+
+- Selección de paquetes del sistema con el botón _SYSTEM APPS_:
+<img src="/res/img/3.png" width="300" />
+
+- Selección de aplicaciones instaladas con el botón _USER APPS_:
+<img src="/res/img/4.png" width="300" />
+
+<img src="/res/img/5.png" width="300" />
 
 ## Ejecutando las pruebas ⚙️
 

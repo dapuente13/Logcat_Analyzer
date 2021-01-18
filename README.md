@@ -58,10 +58,7 @@ Al volver a la ventana de ajustes, ahora veremos la sección de Opciones de Desa
 
 ### 2. Descargar ADB en el PC
 
-Descarga SDK para Windows: https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=es-419
-
-Sigue el asistente de instalación e instala todos los paquetes.
-Al final de la guía podremos desinstalar Android Studio si queremos. 
+Descarga SDK para Windows/macOS/Linux: https://developer.android.com/studio/releases/platform-tools
 
 
 ### 3. Conceder permisos

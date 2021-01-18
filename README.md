@@ -50,7 +50,7 @@ En este caso, usaremos el ADB para conceder permisos a nuestra app.
 Estos son los pasos a seguir:
 
 #### 1. Activar opciones de desarrollador
-![Logcat_Analyzer](/res/img/OpcionesDesarrollador.png)
+![OpcionesDesarrollador1](/res/img/OpcionesDesarrollador1.png)
 
 Dirígete a la sección _Acerca del teléfono_ situada al final de los ajustes de Android.
 

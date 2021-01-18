@@ -23,13 +23,16 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 Vamos a necesitar:
+- Logcat Analyzer app (en este repositorio)
 - Un teléfono con sistema operativo Android 6 o superior.
 - Windows/macOS/Linux
-- ADB (Android Debug Bridge)
+- ADB (Android Debug Bridge) (opcional)
 - Instancia Ubuntu 12 con Spark
 
 
 ### Preparación del entorno Android 🔧
+
+Los siguientes pasos son opcionales, para aquell@s que quieran hacer un análisis de todos los logs que lanza nuestro dispositivo Android.
 
 Antes de instalar la aplicación debemos preparar nuestro dispositivo Android para aprovechar todas sus funcionalidades. 
 Para poder tener acceso a todos los logs de logcat, se debe conceder el siguiente permiso a la aplicación:
@@ -65,7 +68,7 @@ Descarga SDK para Windows/macOS/Linux: https://developer.android.com/studio/rele
 - Dentro de _Opciones de Desarrollador_, activa la _Depuración por USB_. Te saldrá un mensaje pidiendo tu confirmación, pulsa _OK_.
 ![USB_Debug](/res/img/USB_Debug.png)
 
-- En el PC, extrae el contendio del .zip que te has descargado previamente con el ADB y abre una consola dentro de la carpeta _platform-tools_.
+- En el PC, extraemos el contendio del .zip que te has descargado previamente con el ADB y abre una consola dentro de la carpeta _platform-tools_.
 ![CMD_P](/res/img/CMD_P.PNG)
 
 - Con el siguiente comando comprobaremos que se detecta el móvil:
@@ -79,8 +82,10 @@ adb shell pm grant com.app.netcat android.permission.READ_LOGS
 ```
 ![CMD_A](/res/img/CMD_A.PNG)
 
+- Ya podríamos quitar el USB del PC. 
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+Recordamos que estos pasos son opcionales y con ellos únicamente conseguiremos analizar todos los logs que se lanzan.
+
 
 ## Ejecutando las pruebas ⚙️
 

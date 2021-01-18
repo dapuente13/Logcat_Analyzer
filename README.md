@@ -6,8 +6,8 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 - Sobre el contenido del repositorio
 - Comenzando
-- Pre-requisitos
-- Preparación del entorno Android (opcional)
+  - Pre-requisitos
+  - Preparación del entorno Android (opcional)
 - Funcionamiento de la aplicación
 - Spark streaming
 

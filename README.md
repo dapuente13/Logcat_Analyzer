@@ -66,13 +66,19 @@ Descarga SDK para Windows/macOS/Linux: https://developer.android.com/studio/rele
 ![USB_Debug](/res/img/USB_Debug.png)
 
 - En el PC, extrae el contendio del .zip que te has descargado previamente con el ADB y abre una consola dentro de la carpeta _platform-tools_.
-![CMD_P](/res/img/CMD_P.png)
+![CMD_P](/res/img/CMD_P.PNG)
 
-_Y repite_
+- Con el siguiente comando comprobaremos que se detecta el móvil:
+```
+adb devices
+```
 
+- A continuación daremos permisos a nuestra aplicación:
 ```
-hasta finalizar
+adb shell pm grant com.app.netcat android.permission.READ_LOGS
 ```
+![CMD_A](/res/img/CMD_A.PNG)
+
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 

@@ -91,7 +91,7 @@ Recordamos que estos pasos son opcionales y con ellos únicamente conseguiremos 
 
 Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos la siguiente interfaz:
 
-<img src="/res/img/1.png" width="300" />
+<img src="/res/img/6.png" width="300" />
 <img src="/res/img/2.png" width="300" />
 
 ## Ejecutando las pruebas ⚙️

@@ -87,6 +87,13 @@ adb shell pm grant com.app.netcat android.permission.READ_LOGS
 Recordamos que estos pasos son opcionales y con ellos únicamente conseguiremos analizar todos los logs que se lanzan.
 
 
+## Funcionamiento de la aplicación.
+
+Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos la siguiente interfaz:
+
+<img src="/res/img/1.png" width="300" />
+<img src="/res/img/2.png" width="300" />
+
 ## Ejecutando las pruebas ⚙️
 
 _Explica como ejecutar las pruebas automatizadas para este sistema_
@@ -98,18 +105,6 @@ _Explica que verifican estas pruebas y por qué_
 ```
 Da un ejemplo
 ```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 

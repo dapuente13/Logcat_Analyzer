@@ -4,12 +4,12 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 ## Índice
 
-- Sobre el contenido del repositorio
+- [Sobre el contenido del repositorio](#sobre-el-contenido-del-repositorio)
 - [Comenzando](#comenzando-)
-  - Pre-requisitos
-  - Preparación del entorno Android (opcional)
-- Funcionamiento de la aplicación
-- Spark streaming
+  - [Pre-requisitos](#pre-requisitos)
+  - [Preparación del entorno Android] (opcional)
+- [Funcionamiento de la aplicación]()
+- [Spark streaming]()
 
 ## Sobre el contenido del repositorio
 

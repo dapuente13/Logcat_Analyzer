@@ -260,13 +260,13 @@ El script _connection.sh_ es básicamente un comando _socat_ que redirecciona el
 Esto permite que la IP del móvil no sea relevante para el servidor, cualquiera se puede conectar.
 
 El _analyser.py_ es un archivo que ejecuta un spark streaming. Mediante un socket va recibiendo los logs, que filtrará por nivel de log y reducirá según la etiqueta.
-Almacena todos los logs recibidos en _AndroidLogs/_ y el resultado de la reducción en _SuspiciousLogs/_.
+Almacena todos los logs recibidos en _AndroidLogs/_ y el resultado de la reducción en _SuspiciousList/_.
 
 <img src="/res/img/9.PNG" width="300" />
 
 <img src="/res/img/10.PNG" width="300" />
 
-Por último, el script _sendData.sh_ junta el resultado de _SuspiciousLogs/_ en un txt y lo envía por netcat al dispositivo móvil.
+Por último, el script _sendData.sh_ junta el resultado de _SuspiciousList/_ en un txt y lo envía por netcat al dispositivo móvil.
 
 ## 7. Modo de uso
 En el servidor requerimos dos pestañas abiertas. En una de ellas debemos tener el script _connection.sh_ ejecutándose.

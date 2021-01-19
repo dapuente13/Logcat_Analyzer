@@ -19,8 +19,8 @@
     - [Pre-requisitos](#pre-requisitos)
     - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional) (opcional)
 5. [**Funcionamiento de la aplicación**](#5-funcionamiento-de-la-aplicaci%C3%B3n)
-6. [**Spark streaming**](#6-spark-streaming)
-7. 
+6. [**Funcionamiento del servidor**](#6-funcionamiento-del-servidor)
+7. [**Modo de uso**](#7-modo-de-uso)
 8. [**Conclusión**](#8-Conclusi%C3%B3n)
 - [**Herramientas-utilizadas**](#herramientas-utilizadas)
 - [**Autores**](#autores)
@@ -140,6 +140,60 @@ adb shell pm grant com.app.netcat android.permission.READ_LOGS
 
 Recordamos que estos pasos son opcionales y con ellos únicamente conseguiremos analizar todos los logs que se lanzan.
 
+### Preparación del entorno EC2
+Partiremos de la base de que el usuario ha creado una instancia EC2 con Linux y se encuentra conectado a ella.
+Primero es necesario instalar Java:
+```
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt install openjdk-8-jdk
+```
+
+Para comprobar la instalación, ejecutar:
+```
+java -version
+```
+
+Instalamos Scala:
+```
+sudo apt-get install scala
+```
+
+Para comprobar la instalación, ejecutar:
+```
+scala -version
+```
+
+Instalamos Python:
+```
+sudo apt-get install python
+```
+
+Para comprobar la instalación, ejecutar:
+```
+python -h
+```
+
+Instalamos Spark:
+```
+sudo curl -O http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+sudo tar xvf ./spark-2.2.0-bin-hadoop2.7.tgz
+sudo mkdir /usr/local/spark
+sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark
+```
+
+A continuación añadir _/usr/local/spark/bin_ a _PATH_ en _.profile_. Para ello, añadir la siguiente línea al final del archivo _~/.profile_:
+```
+export PATH="$PATH:/usr/local/spark/bin"
+```
+
+Ejecutar _source ~/.profile_ para actualizar el PATH de la sesión.
+Incluirel hostname interno y la IP a _/etc/hosts_
+```
+cat /etc/hosts
+127.0.0.1 localhost
+172.30.4.210 ip-172-30-4-210
+```
 
 ## 5. Funcionamiento de la aplicación.
 
@@ -171,13 +225,13 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 - Resultados obtenidos
 <img src="/res/img/results.jpg" width="300" />
 
-## 6. Spark Streaming
+## 6. Funcionamiento del servidor
 
-_Texto de ejemplo_
 
-```
-Da un ejemplo
-```
+
+
+## 7. Modo de uso
+
 ## 8. Conclusión
 ------------------------------------------------------------
 

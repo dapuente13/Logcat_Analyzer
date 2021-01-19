@@ -38,7 +38,7 @@ Monitorizar los logs que genera un dispositivo Android localmente es una tarea p
 Por este motivo hacemos uso del Big Data, para poder procesar toda la información que aporta cada log sabiendo que por cada segundo pueden llegar a generarse más de 500 logs.
 
 ### Solución
-Nuestra solución se basa en obtener, monitorizar, analizar, filtrar y guardar los logs en archivos de texto con el objetivo de detectar acciones inusuales o maliciosas para garantizar la seguridad del usuario.
+Nuestra solución se basa en obtener, monitorizar, analizar, filtrar y guardar los logs en archivos de texto para luego enviar un resumen al dispositivo móvil de las aplicaciones que han tenido un comportamiento sospechoso (se devuelve las aplicaciones o servicios que han causado algún warning junto con el número de warnings que ha levantado dicha aplicación o servicio) con el objetivo de detectar acciones inusuales o maliciosas para garantizar la seguridad del usuario.
 ## 2. Dataset
 ```
 01-18 14:47:47.997  1390  1667 I chatty  : uid=1000(system) WifiP2pService expire 6 lines
@@ -88,8 +88,8 @@ Vamos a necesitar:
 
 Los siguientes pasos son opcionales, para aquell@s que quieran hacer un análisis de todos los logs que lanza nuestro dispositivo Android.
 
-Antes de instalar la aplicación debemos preparar nuestro dispositivo Android para aprovechar todas sus funcionalidades. 
-Para poder tener acceso a todos los logs de logcat, se debe conceder el siguiente permiso a la aplicación:
+Antes de instalar la aplicación debemos preparar nuestro dispositivo Android para aprovechar todas sus funcionalidades. Este paso es opcional. 
+Para poder tener acceso a todos los logs de logcat (y no solo a los de la aplicación), se debe conceder el siguiente permiso a la aplicación:
 
 ```
 android.permission.READ_LOGS
@@ -154,7 +154,7 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 #### 5. El botón _USER APPS_ desplegará los paquetes de las aplicaciones instaladas por el usuario. Aquellas aplicaciones seleccionadas se añadiran al filtro.
 #### 6. El _STATUS_ mostrará el estado de la conexión con el servidor (OFFLINE / RUNNING / STOPPED).
 #### 7. El botón _START_ conectará el dispositivo con el servidor seleccionado.
-#### 8. El botón _STOP_ detendrá la conexión.
+#### 8. El botón _STOP_ detendrá la conexión. Una vez detenida, pasará a tener el valor _Get Results_, el cual creará un diálogo con los resultados obtenidos.
 
 
 - Introduciendo la keyword _cam_:
@@ -167,6 +167,9 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 <img src="/res/img/4.png" width="300" />
 
 <img src="/res/img/5.png" width="300" />
+
+- Resultados obtenidos
+<img src="/res/img/results.jpg" width="300" />
 
 ## 6. Spark Streaming
 

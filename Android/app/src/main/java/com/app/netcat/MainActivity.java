@@ -5,21 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.Adapter;
 import android.content.pm.PackageInfo;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
@@ -30,6 +23,8 @@ public class MainActivity extends AppCompatActivity{
 
     protected ArrayList<PackageInfoStruct> userApps;
     protected ArrayList<PackageInfoStruct> systemApps;
+
+    protected Button stop;
 
     class PackageInfoStruct {
         private String appname;
@@ -60,7 +55,7 @@ public class MainActivity extends AppCompatActivity{
         final Button start = findViewById(R.id.button);
         start.setOnClickListener(v -> start());
 
-        final Button stop = findViewById(R.id.button2);
+        stop = findViewById(R.id.button2);
         stop.setOnClickListener(v -> stop());
 
     }
@@ -68,7 +63,8 @@ public class MainActivity extends AppCompatActivity{
     protected void start(){
         if(ip.getText().toString() != "" && port.getText().toString() != ""){
             status.setText("Running");
-            s[0] = (SendData) new SendData().execute(ip.getText().toString(), port.getText().toString(), filter.getText().toString());
+            stop.setText("Stop");
+            s[0] = (SendData) new SendData(this, false).execute(ip.getText().toString(), port.getText().toString(), filter.getText().toString());
         }
         else{
             status.setText("Ip/Port empty");
@@ -76,12 +72,13 @@ public class MainActivity extends AppCompatActivity{
     }
 
     protected void stop(){
-        if(!s[0].isCancelled()){
+        if(!s[0].getStop()){
             status.setText("Stopped");
-            s[0].cancel(true);
+            s[0].setStop(true);
+            stop.setText("Get Results");
         }
         else{
-            status.setText("Already Stopped!");
+            s[0] = (SendData) new SendData(this, true).execute(ip.getText().toString(), port.getText().toString(), filter.getText().toString());
         }
     }
 

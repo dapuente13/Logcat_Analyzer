@@ -289,9 +289,9 @@ Por último, ejecutar el script _sendData.sh_ y pulsar el botón _GET RESULTS_ e
 ## 8. Conclusión
 ------------------------------------------------------------
 Trabajo futuro:
--Automatizar la conexión cliente-servidor.
--Permitir múltiples conexiones simultáneas al servidor.
--Implementar un método de machine learning para que aprenda de casos de logs benignos y malignos y sea capaz de discernirlos.
+* Automatizar la conexión cliente-servidor.
+* Permitir múltiples conexiones simultáneas al servidor.
+* Implementar un método de machine learning para que aprenda de casos de logs benignos y malignos y sea capaz de discernirlos.
 
 ## Herramientas utilizadas
 

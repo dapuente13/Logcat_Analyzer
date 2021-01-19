@@ -6,8 +6,8 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 - [Sobre el contenido del repositorio](#sobre-el-contenido-del-repositorio)
 - [Comenzando](#comenzando-)
-  - [Pre-requisitos](#pre-requisitos)
-  - [Preparación del entorno Android] (opcional)
+  - [Pre-requisitos](#pre-requisitos-)
+  - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional-) (opcional)
 - [Funcionamiento de la aplicación]()
 - [Spark streaming]()
 

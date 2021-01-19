@@ -1,7 +1,7 @@
 ------------------------------------------------------------
 
 <p align="center">
-  <img src="https://github.com/UCloudM/Steam_Analysis_For_Gamers/blob/master/steam.jpg">
+  <img src="res/img/titulo.png">
 </p>
 <h1 align="center"> Logcat Analyzer </h1>
 

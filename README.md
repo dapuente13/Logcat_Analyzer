@@ -38,7 +38,7 @@ Por ello, es necesaria alguna forma de monitorizar lo que está ocurriendo en un
 
 ### Necesidad de Big Data
 Monitorizar los logs que genera un dispositivo Android localmente es una tarea pesada y costosa, ya que consumiría mucha batería además de sobrecargar la CPU.
-Por este motivo hacemos uso del Big Data, para poder procesar toda la información que aporta cada log sabiendo que por cada segundo pueden llegar a generarse más de 500 logs.
+Por este motivo hacemos uso del Big Data, para poder procesar toda la información que aporta cada log sabiendo que por cada segundo pueden llegar a generarse más de 1000 logs.
 Además, si se escalase para permitir múltiples conexiones, el peso de la información incrementaría considerablemente.
 
 ### Solución
@@ -281,7 +281,7 @@ Pasados 8 segundos (hemos puesto un sleep por si acaso), empezarán a llegar log
 
 <img src="/res/img/8.PNG" width="300" />
 
-Cuando el usuario desee pararlo, debe pulsar el botón _STOP_ y después interrumpir la ejecución de spark y del script _connection.sh_ con Ctrl^C.
+Cuando el usuario desee pararlo (se recomiendan pocos segundos, porque el móvil puede no soportar la carga), debe pulsar el botón _STOP_ y después interrumpir la ejecución de spark y del script _connection.sh_ con Ctrl^C.
 
 Por último, ejecutar el script _sendData.sh_ y pulsar el botón _GET RESULTS_ en el móvil. Pasado un tiempo se recibirán en el dispositivo y se imprimirán en forma de alerta.
 

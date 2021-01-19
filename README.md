@@ -292,7 +292,7 @@ Trabajo futuro:
 * Permitir múltiples conexiones simultáneas al servidor.
 * Implementar un método de machine learning para que aprenda de casos de logs benignos y malignos y sea capaz de discernirlos.
 
-
+------------------------------------------------------------
 ## Herramientas utilizadas
 
 * [Spark Streaming](https://spark.apache.org/docs/latest/streaming-programming-guide.html) - Creación del servidor y procesamiento de logs

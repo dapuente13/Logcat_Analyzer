@@ -5,7 +5,7 @@ _Acá va un párrafo que describa lo que es el proyecto_
 ## Índice
 1. [**El Proyecto**]()
     - [Descripción del problema]()
-    - [Necesidad de Big Data](#necesidad-del-problema)
+    - [Necesidad de Big Data](#necesidad-de-big-data)
     - [Solución]()
 2. [**Dataset**]()    
 3. [**Sobre el contenido del repositorio**](#sobre-el-contenido-del-repositorio)

@@ -1,6 +1,5 @@
 # Logcat Analyzer 
 
-_Acá va un párrafo que describa lo que es el proyecto_
 
 ## Índice
 1. [**El Proyecto**](#1-el-proyecto)
@@ -21,9 +20,11 @@ _Acá va un párrafo que describa lo que es el proyecto_
 ### Descripción del problema
 
 ### Necesidad de Big Data
+Monitorizar los logs que genera un dispositivo Android localmente es una tarea pesada y costosa, ya que consumiría mucha batería además de sobrecargar la CPU.
+Por este motivo hacemos uso del Big Data, para poder procesar toda la información que aporta cada log sabiendo que por cada segundo pueden llegar a generarse más de 500 logs.
 
 ### Solución
-
+Nuestra solución se basa en obtener, monitorizar, analizar, filtrar y guardar los logs en archivos de texto con el objetivo de detectar acciones inusuales o maliciosas para garantizar la seguridad del usuario.
 ## 2. Dataset
 
 ## 3. Sobre el contenido del repositorio

@@ -3,7 +3,7 @@
 _Acá va un párrafo que describa lo que es el proyecto_
 
 ## Índice
-1. [**El Proyecto**](1-el-proyecto)
+1. [**El Proyecto**](#1-el-proyecto)
     - [Descripción del problema]()
     - [Necesidad de Big Data](#necesidad-de-big-data)
     - [Solución]()

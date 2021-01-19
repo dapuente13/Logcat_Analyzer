@@ -25,6 +25,7 @@
 - [**Herramientas-utilizadas**](#herramientas-utilizadas)
 - [**Autores**](#autores)
 
+------------------------------------------------------------
 
 ## 1. **El proyecto**
 

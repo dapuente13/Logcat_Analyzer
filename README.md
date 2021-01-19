@@ -86,6 +86,7 @@ Este repositorio está compuesto por 4 directorios principales y el archivo .apk
 - .apk: Esta es el aplicación que se debe instalar en el dispositivo Android.
 - spark: Aquí recogemos los scripts necesarios para ejecutar en Apache Spark y conseguir enviar los logs por streaming.
 - res: Este es un directorio donde almacenamos recursos necesarios para este repositorio. El usuario no debe prestar atención a este directorio.
+- testCase: Contiene el output de un caso de prueba.
 
 ## 4. Antes de empezar
 

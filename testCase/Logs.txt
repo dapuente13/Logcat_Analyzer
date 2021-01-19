@@ -1,0 +1,100 @@
+8436 01-19 11:01:45.912  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:06:18.785  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:07:00.721  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #1
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: Process: com.app.netcat, PID: 4033
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$4.done(AsyncTask.java:399)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.processTask(ThreadPoolExecutor.java:1187)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:929)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at com.app.netcat.SendData.doInBackground(SendData.java:87)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at com.app.netcat.SendData.doInBackground(SendData.java:29)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$3.call(AsyncTask.java:378)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	... 5 more
+8436 01-19 11:10:43.192  6927  6927 D ActivityThread: Attach thread to application
+8436 01-19 11:10:43.359  6927  6927 V ActivityThread: callActivityOnCreate
+8436 01-19 11:10:45.440  6927  6927 D ActivityThread: add activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:11:38.066  6927  6927 D ActivityThread: Remove activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:26:50.857  7738  7738 D ActivityThread: Attach thread to application
+8436 01-19 11:26:51.027  7738  7738 V ActivityThread: callActivityOnCreate
+8436 01-19 11:26:53.087  7738  7738 D ActivityThread: add activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:01:45.912  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:06:18.785  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:07:00.721  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #1
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: Process: com.app.netcat, PID: 4033
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$4.done(AsyncTask.java:399)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.processTask(ThreadPoolExecutor.java:1187)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:929)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at com.app.netcat.SendData.doInBackground(SendData.java:87)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at com.app.netcat.SendData.doInBackground(SendData.java:29)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$3.call(AsyncTask.java:378)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	... 5 more
+8436 01-19 11:10:43.192  6927  6927 D ActivityThread: Attach thread to application
+8436 01-19 11:10:43.359  6927  6927 V ActivityThread: callActivityOnCreate
+8436 01-19 11:10:45.440  6927  6927 D ActivityThread: add activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:11:38.066  6927  6927 D ActivityThread: Remove activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:26:50.857  7738  7738 D ActivityThread: Attach thread to application
+8436 01-19 11:26:51.027  7738  7738 V ActivityThread: callActivityOnCreate
+8436 01-19 11:26:51.960  7738  7738 W com.app.netcat: resources.arsc in APK '/data/app/com.instagram.android-atPdgP8RXBI4wkmwgKyxqQ==/base.apk' is compressed.
+8436 01-19 11:26:52.747  7738  7738 W HwResourcesImpl: icon in pkg com.huawei.livewallpaper.lamer is too large.sDefaultSizeWithoutEdge = 178bmp.getWidth() = 2160
+8436 01-19 11:26:52.802  7738  7738 W HwResourcesImpl: icon in pkg com.android.storagemanager is too large.sDefaultSizeWithoutEdge = 178bmp.getWidth() = 600
+8436 01-19 11:26:53.087  7738  7738 D ActivityThread: add activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:26:53.122  7738  7771 D HiTouch_PressGestureDetector: onAttached, package=com.app.netcat, windowType=1, mHiTouchRestricted=false
+8436 01-19 11:26:53.161  7738  7765 I iGraphics: [0020080c] pn: com.app.netcat, p: 7738
+8436 01-19 11:26:53.161  7738  7765 I iGraphics: [0030080c] no spt app: com.app.netcat
+8436 01-19 11:26:53.177  7738  7765 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+8436 01-19 11:26:53.208  7738  7765 W Gralloc3: mapper 3.x is not supported
+8436 01-19 11:26:53.231  7738  7765 E         : APS:IFLoad:importExternalFunctions, search function createNewHwApsUtils failed, dlsym err:undefined symbol: createNewHwApsUtils
+8436 01-19 11:26:53.231  7738  7765 D         : APS:importExternalFunctions OK
+8436 01-19 11:26:53.235  7738  7738 I HwViewRootImpl: removeInvalidNode jank list is null
+8436 01-19 11:26:55.981  7738  7738 D AwareBitmapCacher: handleInit switch not opened pid=7738
+8436 01-19 11:27:19.558  7738  7738 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+8436 01-19 11:27:19.559  7738  7738 V HiTouch_HiTouchSensor: User setup is finished.
+8436 01-19 11:27:19.592  7738  7738 I HwViewRootImpl: removeInvalidNode all the node in jank list is out of time
+8436 01-19 11:27:19.653  7738  7738 V AudioManager: querySoundEffectsEnabled...
+8436 01-19 11:01:45.912  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:06:18.785  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:07:00.721  4033  4033 V ActivityThread: Handle window ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} visibility: false
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #1
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: Process: com.app.netcat, PID: 4033
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$4.done(AsyncTask.java:399)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:289)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.processTask(ThreadPoolExecutor.java:1187)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:929)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at com.app.netcat.SendData.doInBackground(SendData.java:87)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at com.app.netcat.SendData.doInBackground(SendData.java:29)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at android.os.AsyncTask$3.call(AsyncTask.java:378)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+8436 01-19 11:10:38.411  4033  4086 E AndroidRuntime: 	... 5 more
+8436 01-19 11:10:43.192  6927  6927 D ActivityThread: Attach thread to application
+8436 01-19 11:10:43.359  6927  6927 V ActivityThread: callActivityOnCreate
+8436 01-19 11:10:45.440  6927  6927 D ActivityThread: add activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:11:38.066  6927  6927 D ActivityThread: Remove activity client record, r= ActivityRecord{55a5da5 token=android.os.BinderProxy@5c47463 {com.app.netcat/com.app.netcat.MainActivity}} token= android.os.BinderProxy@5c47463
+8436 01-19 11:26:50.857  7738  7738 D ActivityThread: Attach thread to application
+8436 01-19 11:26:51.027  7738  7738 V ActivityThread: callActivityOnCreate
+8436 01-19 11:26:51.960  7738  7738 W com.app.netcat: resources.arsc in APK '/data/app/com.instagram.android-atPdgP8RXBI4wkmwgKyxqQ==/base.apk' is compressed.

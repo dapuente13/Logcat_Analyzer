@@ -29,6 +29,8 @@
 
 ## 1. **El proyecto**
 
+**Logcat Analyzer** es un proyecto en el cual hemos realizado un procesamiento de logs en tiempo real (streaming) lanzados desde dispositivos Android y recopilados en una máquina Ubuntu con Spark en AWS. Para ello hemos desarrollado una app que actua como cliente mandando logs a un servidor en otra máquina distinta.
+
 ### Descripción del problema
 
 ### Necesidad de Big Data

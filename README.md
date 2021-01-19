@@ -5,7 +5,7 @@ _Acá va un párrafo que describa lo que es el proyecto_
 ## Índice
 
 - Sobre el contenido del repositorio
-- [Comenzando](#Comenzando)
+- [Comenzando](#comenzando-)
   - Pre-requisitos
   - Preparación del entorno Android (opcional)
 - Funcionamiento de la aplicación

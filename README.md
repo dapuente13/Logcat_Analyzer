@@ -4,15 +4,16 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 ## Índice
 1. [**El Proyecto**]()
-  - [Descripción del problema]()
-  - [Necesidad de Big Data]()
-  - [Solución]()
-2. [Sobre el contenido del repositorio](#sobre-el-contenido-del-repositorio)
-3. [Comenzando](#comenzando-)
-  - [Pre-requisitos](#pre-requisitos-)
-  - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional-) (opcional)
-4. [Funcionamiento de la aplicación](#funcionamiento-de-la-aplicaci%C3%B3n)
-5. [Spark streaming](#spark-streaming)
+    - [Descripción del problema]()
+    - [Necesidad de Big Data]()
+    - [Solución]()
+2. [**Dataset**]()    
+3. [**Sobre el contenido del repositorio**](#sobre-el-contenido-del-repositorio)
+4. [**Implementación**](#comenzando-)
+    - [Pre-requisitos](#pre-requisitos-)
+    - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional-) (opcional)
+5. [**Funcionamiento de la aplicación**](#funcionamiento-de-la-aplicaci%C3%B3n)
+6. [**Spark streaming**](#spark-streaming)
 
 
 ##

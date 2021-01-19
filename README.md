@@ -13,6 +13,10 @@
     - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional) (opcional)
 5. [**Funcionamiento de la aplicación**](#5-funcionamiento-de-la-aplicaci%C3%B3n)
 6. [**Spark streaming**](#6-spark-streaming)
+7. 
+8. [**Conclusión**](#8-Conclusi%C3%B3n)
+[**Herramientas-utilizadas**](#herramientas-utilizadas)
+[**Autores**](#autores)
 
 
 ## 1. **El proyecto**
@@ -145,13 +149,13 @@ _Texto de ejemplo_
 Da un ejemplo
 ```
 
-## Construido con 🛠️
+## Herramientas utilizadas
 
 * [Spark Streaming](https://spark.apache.org/docs/latest/streaming-programming-guide.html) - Creación del servidor y procesamiento de logs
 * [Android Studio](https://developer.android.com/studio?hl=es) - Usado para crear la aplicación
 * [AWS](https://aws.amazon.com/es/) - Usado para lanzar la instancia de linux con Spark
 
-## Autores ✒️
+## Autores
 
 * **Ramón Costales de Ledesma** - [Rymond3](https://github.com/Rymond3)
 * **Jose Ignacio Daguerre Garrido** - [joseignaciodg](https://github.com/joseignaciodg)

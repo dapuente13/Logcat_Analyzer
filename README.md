@@ -15,8 +15,8 @@
 6. [**Spark streaming**](#6-spark-streaming)
 7. 
 8. [**Conclusión**](#8-Conclusi%C3%B3n)
-[**Herramientas-utilizadas**](#herramientas-utilizadas)
-[**Autores**](#autores)
+- [**Herramientas-utilizadas**](#herramientas-utilizadas)
+- [**Autores**](#autores)
 
 
 ## 1. **El proyecto**

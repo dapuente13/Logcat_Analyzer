@@ -11,7 +11,7 @@ if __name__ == "__main__":
         print("Usage: logs.py <hostname> <port>", file=sys.stderr)
         exit(-1)
     sc = SparkContext("local[2]", appName="Logs")
-    ssc = StreamingContext(sc, 20)
+    ssc = StreamingContext(sc, 5)
     sc.setLogLevel("ERROR")
     lines = ssc.socketTextStream(sys.argv[1], int(sys.argv[2]))
     RDD_split = lines.filter(lambda line: line != "")

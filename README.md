@@ -5,7 +5,7 @@ _Acá va un párrafo que describa lo que es el proyecto_
 ## Índice
 1. [**El Proyecto**]()
     - [Descripción del problema]()
-    - [Necesidad de Big Data]()
+    - [Necesidad de Big Data](#necesidad-del-problema)
     - [Solución]()
 2. [**Dataset**]()    
 3. [**Sobre el contenido del repositorio**](#sobre-el-contenido-del-repositorio)
@@ -16,7 +16,13 @@ _Acá va un párrafo que describa lo que es el proyecto_
 6. [**Spark streaming**](#spark-streaming)
 
 
-##
+## **El proyecto**
+
+### Descripción del problema
+
+### Necesidad de Big Data
+
+### Solución
 
 ## Sobre el contenido del repositorio
 

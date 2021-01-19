@@ -292,7 +292,6 @@ Trabajo futuro:
 * Permitir múltiples conexiones simultáneas al servidor.
 * Implementar un método de machine learning para que aprenda de casos de logs benignos y malignos y sea capaz de discernirlos.
 
-------------------------------------------------------------
 
 ## Herramientas utilizadas
 

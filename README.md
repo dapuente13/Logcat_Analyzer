@@ -197,6 +197,7 @@ cat /etc/hosts
 ```
 
 Lo siguiente es descargar los contenidos de la carpeta _Spark_.
+
 <img src="/res/img/7.PNG" width="300" />
 
 Para la conexión con el servidor, se debe añadir al security group una regla que acepte conexiones TCP entrantes y salientes con el puerto 1234.
@@ -242,7 +243,9 @@ Esto permite que la IP del móvil no sea relevante para el servidor, cualquiera 
 
 El _analyser.py_ es un archivo que ejecuta un spark streaming. Mediante un socket va recibiendo los logs, que filtrará por nivel de log y reducirá según la etiqueta.
 Almacena todos los logs recibidos en _AndroidLogs/_ y el resultado de la reducción en _SuspiciousLogs/_.
+
 <img src="/res/img/9.PNG" width="300" />
+
 <img src="/res/img/10.PNG" width="300" />
 
 Por último, el script _sendData.sh_ junta el resultado de _SuspiciousLogs/_ en un txt y lo envía por netcat al dispositivo móvil.
@@ -257,6 +260,7 @@ spark-submit analyser.py localhost 9999
 
 Va a estar devolviendo errores hasta que no haga conexión, por lo que configuramos la aplicación móvil y pulsamos el botón _START_.
 Pasados 8 segundos (hemos puesto un sleep por si acaso), empezarán a llegar logs, que se imprimirán por pantalla.
+
 <img src="/res/img/8.PNG" width="300" />
 
 Cuando el usuario desee pararlo, debe pulsar el botón _STOP_ y después interrumpir la ejecución de spark y del script _connection.sh_ con Ctrl^C.

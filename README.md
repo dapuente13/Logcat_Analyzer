@@ -40,20 +40,23 @@ Por este motivo hacemos uso del Big Data, para poder procesar toda la informaci�
 ### Solución
 Nuestra solución se basa en obtener, monitorizar, analizar, filtrar y guardar los logs en archivos de texto con el objetivo de detectar acciones inusuales o maliciosas para garantizar la seguridad del usuario.
 ## 2. Dataset
+```
 01-18 14:47:47.997  1390  1667 I chatty  : uid=1000(system) WifiP2pService expire 6 lines
 01-18 14:47:48.000  2006  2348 I DeepNoDisturbP: handleStateChanged reason=15
 01-18 15:52:49.310  1786  1786 W HwLockScreenPanel: Handle message: 7
 01-18 15:52:49.472 24944 24944 W com.whatsapp: type=1400 audit(0.0:274475): avc: granted { getattr } for pid=24944 comm=4D65646961446F776E6C6F61642023 name="/" dev="sdcardfs" ino=11048
 01-18 15:52:49.472 24944 24944 W com.whatsapp: type=1400 audit(0.0:274476): avc: granted { write } for pid=24944 comm=4D65646961446F776E6C6F61642023 name=".Shared" dev="sdcardfs" ino=20790
+```
 
 El primer campo representa la fecha de escritura del log, seguido por la hora. Luego viene el IP del proceso que lo generó y el del hilo. La letra siguiente es el nivel de log, que representa su prioridad (mecionada posteriormente). Le sigue una etiqueta de identificación de la aplicación o servicio que provocaron el log y, por último, el texto. Estos son los niveles de log posibles:
+```
 V / Verbose: la menor prioridad, con más información de la necesaria
 D / Debug: mensajes útiles para la depuración de aplicaciones
 I / Info: mensajes de información
 W / Warning: mensajes con advertencias
 E / Error: errores de la aplicación
 F / Fatal: errores graves
-
+```
 
 ## 3. Sobre el contenido del repositorio
 

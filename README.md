@@ -33,14 +33,32 @@
 **Logcat Analyzer** es un proyecto en el cual hemos realizado un procesamiento de logs en tiempo real (streaming) lanzados desde dispositivos Android y recopilados en una máquina Ubuntu con Spark en AWS. Para ello hemos desarrollado una app que actua como cliente mandando logs a un servidor en otra máquina distinta.
 
 ### Descripción del problema
+Es una labor complicada detectar malware en Android. Algunos acercamientos tratan de analizar los ejecutables estáticamente, antes de la ejecución. El problema surge en que de esta forma no se puede observar bien el comportamiento de la aplicación.
+Por ello, es necesaria alguna forma de monitorizar lo que está ocurriendo en un dispositivo. La monitorización de logs permite precisamente esto, ver qué aplicación o servicio está haciendo qué en todo momento.
 
 ### Necesidad de Big Data
 Monitorizar los logs que genera un dispositivo Android localmente es una tarea pesada y costosa, ya que consumiría mucha batería además de sobrecargar la CPU.
 Por este motivo hacemos uso del Big Data, para poder procesar toda la información que aporta cada log sabiendo que por cada segundo pueden llegar a generarse más de 500 logs.
+Además, si se escalase para permitir múltiples conexiones, el peso de la información incrementaría considerablemente.
 
 ### Solución
 Nuestra solución se basa en obtener, monitorizar, analizar, filtrar y guardar los logs en archivos de texto para luego enviar un resumen al dispositivo móvil de las aplicaciones que han tenido un comportamiento sospechoso (se devuelve las aplicaciones o servicios que han causado algún warning junto con el número de warnings que ha levantado dicha aplicación o servicio) con el objetivo de detectar acciones inusuales o maliciosas para garantizar la seguridad del usuario.
 ## 2. Dataset
+En el cliente (dispositivo móvil) hemos desarrollado una aplicación que hemos llamado “Logcat Analyzer”, que se conecta con el servidor (instancia EC2) y le manda los logs en un período de tiempo que escoge el usuario, entre que presiona el botón start y el stop.
+Los logs los accedemos mediante _logcat_, ejecutando:
+```
+Process process = Runtime.getRuntime().exec(new String[]{"logcat", "-d"});
+```
+
+A continuación eliminamos su contenido para que cuando volvamos a leerlos no haya contenido repetido:
+```
+Runtime.getRuntime().exec(new String[]{"logcat", "-c"});
+```
+
+Una vez obtenidos los logs, a los cuales les concatenamos un id antes de cada log para distinguir entre distintos dispositivos, creamos un socket para conectarnos con el server y los mandamos a la instancia a través de dicho socket.
+
+El formato de los logs es así:
+
 ```
 01-18 14:47:47.997  1390  1667 I chatty  : uid=1000(system) WifiP2pService expire 6 lines
 01-18 14:47:48.000  2006  2348 I DeepNoDisturbP: handleStateChanged reason=15
@@ -270,7 +288,10 @@ Por último, ejecutar el script _sendData.sh_ y pulsar el botón _GET RESULTS_ e
 
 ## 8. Conclusión
 ------------------------------------------------------------
-
+Trabajo futuro:
+-Automatizar la conexión cliente-servidor.
+-Permitir múltiples conexiones simultáneas al servidor.
+-Implementar un método de machine learning para que aprenda de casos de logs benignos y malignos y sea capaz de discernirlos.
 
 ## Herramientas utilizadas
 

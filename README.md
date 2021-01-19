@@ -285,9 +285,9 @@ Cuando el usuario desee pararlo, debe pulsar el botón _STOP_ y después interru
 
 Por último, ejecutar el script _sendData.sh_ y pulsar el botón _GET RESULTS_ en el móvil. Pasado un tiempo se recibirán en el dispositivo y se imprimirán en forma de alerta.
 
+------------------------------------------------------------
 
 ## 8. Conclusión
-------------------------------------------------------------
 Trabajo futuro:
 * Automatizar la conexión cliente-servidor.
 * Permitir múltiples conexiones simultáneas al servidor.

@@ -9,9 +9,9 @@ _Acá va un párrafo que describa lo que es el proyecto_
     - [Solución]()
 2. [**Dataset**]()    
 3. [**Sobre el contenido del repositorio**](#sobre-el-contenido-del-repositorio)
-4. [**Implementación**](#comenzando-)
-    - [Pre-requisitos](#pre-requisitos-)
-    - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional-) (opcional)
+4. [**Antes de empezar**](#antes-de-empezar)
+    - [Pre-requisitos](#pre-requisitos)
+    - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional) (opcional)
 5. [**Funcionamiento de la aplicación**](#funcionamiento-de-la-aplicaci%C3%B3n)
 6. [**Spark streaming**](#spark-streaming)
 
@@ -28,11 +28,11 @@ Este repositorio está compuesto por 4 directorios principales y el archivo .apk
 - spark: Aquí recogemos los scripts necesarios para ejecutar en Apache Spark y conseguir enviar los logs por streaming.
 - res: Este es un directorio donde almacenamos recursos necesarios para este repositorio. El usuario no debe prestar atención a este directorio.
 
-## Comenzando 🚀
+## Antes de empezar
 
 _Estas instrucciones te permitirán entender el código del repositorio y obtener una copia del proyecto en funcionamiento en tu máquina local._
 
-### Pre-requisitos 📋
+### Pre-requisitos
 
 _Que cosas necesitas para instalar el software y como instalarlas_
 
@@ -44,7 +44,7 @@ Vamos a necesitar:
 - Instancia Ubuntu 12 con Spark
 
 
-### Preparación del entorno Android (opcional) 🔧
+### Preparación del entorno Android (opcional)
 
 Los siguientes pasos son opcionales, para aquell@s que quieran hacer un análisis de todos los logs que lanza nuestro dispositivo Android.
 

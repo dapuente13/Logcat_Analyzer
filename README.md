@@ -141,4 +141,4 @@ Da un ejemplo
 * **Jose Ignacio Daguerre Garrido** - [joseignaciodg](https://github.com/joseignaciodg)
 * **Daniel Puente Arribas** - [dapuente13](https://github.com/dapuente13)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/dapuente13/Logcat_Analyzer/contributors) quíenes han participado en este proyecto. 

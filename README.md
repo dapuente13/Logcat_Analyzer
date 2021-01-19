@@ -1,15 +1,21 @@
-# Logcat Analyzer
+# Logcat Analyzer 
 
 _Acá va un párrafo que describa lo que es el proyecto_
 
 ## Índice
-
-- [Sobre el contenido del repositorio](#sobre-el-contenido-del-repositorio)
-- [Comenzando](#comenzando-)
+1. [**El Proyecto**]()
+  - [Descripción del problema]()
+  - [Necesidad de Big Data]()
+  - [Solución]()
+2. [Sobre el contenido del repositorio](#sobre-el-contenido-del-repositorio)
+3. [Comenzando](#comenzando-)
   - [Pre-requisitos](#pre-requisitos-)
   - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional-) (opcional)
-- [Funcionamiento de la aplicación](#funcionamiento-de-la-aplicaci%C3%B3n)
-- [Spark streaming](#spark-streaming)
+4. [Funcionamiento de la aplicación](#funcionamiento-de-la-aplicaci%C3%B3n)
+5. [Spark streaming](#spark-streaming)
+
+
+##
 
 ## Sobre el contenido del repositorio
 
@@ -140,5 +146,3 @@ Da un ejemplo
 * **Ramón Costales de Ledesma** - [Rymond3](https://github.com/Rymond3)
 * **Jose Ignacio Daguerre Garrido** - [joseignaciodg](https://github.com/joseignaciodg)
 * **Daniel Puente Arribas** - [dapuente13](https://github.com/dapuente13)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/dapuente13/Logcat_Analyzer/contributors) quíenes han participado en este proyecto. 

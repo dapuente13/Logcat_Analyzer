@@ -16,7 +16,7 @@ _Acá va un párrafo que describa lo que es el proyecto_
 6. [**Spark streaming**](#spark-streaming)
 
 
-## **El proyecto**
+## 1. **El proyecto**
 
 ### Descripción del problema
 
@@ -24,7 +24,9 @@ _Acá va un párrafo que describa lo que es el proyecto_
 
 ### Solución
 
-## Sobre el contenido del repositorio
+## 2. Dataset
+
+## 3. Sobre el contenido del repositorio
 
 Este repositorio está compuesto por 4 directorios principales y el archivo .apk instalable en Android:
 
@@ -34,7 +36,7 @@ Este repositorio está compuesto por 4 directorios principales y el archivo .apk
 - spark: Aquí recogemos los scripts necesarios para ejecutar en Apache Spark y conseguir enviar los logs por streaming.
 - res: Este es un directorio donde almacenamos recursos necesarios para este repositorio. El usuario no debe prestar atención a este directorio.
 
-## Antes de empezar
+## 4. Antes de empezar
 
 _Estas instrucciones te permitirán entender el código del repositorio y obtener una copia del proyecto en funcionamiento en tu máquina local._
 
@@ -107,7 +109,7 @@ adb shell pm grant com.app.netcat android.permission.READ_LOGS
 Recordamos que estos pasos son opcionales y con ellos únicamente conseguiremos analizar todos los logs que se lanzan.
 
 
-## Funcionamiento de la aplicación.
+## 5. Funcionamiento de la aplicación.
 
 Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos la siguiente interfaz:
 
@@ -134,7 +136,7 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 
 <img src="/res/img/5.png" width="300" />
 
-## Spark Streaming
+## 6. Spark Streaming
 
 _Texto de ejemplo_
 

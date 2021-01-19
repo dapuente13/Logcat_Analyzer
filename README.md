@@ -233,7 +233,7 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 
 #### 1. En este campo ingresaremos la dirección IP a la que queremos conectarnos.
 #### 2. De igual forma, en este campo especificamos el puerto del servidor (en el servidor está establecido el puerto 1234).
-#### 3. Aquí tenemos la opción de añadir palabras clave para poder filtrar los logs. Las keywords deben estar separadas por comas.
+#### 3. Aquí tenemos la opción de añadir palabras clave para poder filtrar los logs. Las keywords deben estar separadas por comas. Si se deja en blanco se mandarán todos los logs.
 #### 4. El botón _SYSTEM APPS_ desplegará los paquetes del sistema. Aquellos paquetes seleccionados se añadiran al filtro.
 #### 5. El botón _USER APPS_ desplegará los paquetes de las aplicaciones instaladas por el usuario. Aquellas aplicaciones seleccionadas se añadiran al filtro.
 #### 6. El _STATUS_ mostrará el estado de la conexión con el servidor (OFFLINE / RUNNING / STOPPED).
@@ -272,9 +272,9 @@ Por último, el script _sendData.sh_ junta el resultado de _SuspiciousLogs/_ en 
 En el servidor requerimos dos pestañas abiertas. En una de ellas debemos tener el script _connection.sh_ ejecutándose.
 
 Seguidamente ejecutaríamos el spark streaming en la otra pestaña con:
-´´´
+```
 spark-submit analyser.py localhost 9999
-´´´
+```
 
 Va a estar devolviendo errores hasta que no haga conexión, por lo que configuramos la aplicación móvil y pulsamos el botón _START_.
 Pasados 8 segundos (hemos puesto un sleep por si acaso), empezarán a llegar logs, que se imprimirán por pantalla.

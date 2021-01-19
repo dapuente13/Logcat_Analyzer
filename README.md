@@ -18,6 +18,7 @@
 4. [**Antes de empezar**](#4-antes-de-empezar)
     - [Pre-requisitos](#pre-requisitos)
     - [Preparación del entorno Android](#preparaci%C3%B3n-del-entorno-android-opcional) (opcional)
+    - [Preparación del entorno EC2](#preparaci%C3%B3n-del-entorno-ec2)
 5. [**Funcionamiento de la aplicación**](#5-funcionamiento-de-la-aplicaci%C3%B3n)
 6. [**Funcionamiento del servidor**](#6-funcionamiento-del-servidor)
 7. [**Modo de uso**](#7-modo-de-uso)
@@ -195,6 +196,16 @@ cat /etc/hosts
 172.30.4.210 ip-172-30-4-210
 ```
 
+Lo siguiente es descargar los contenidos de la carpeta _Spark_.
+<img src="/res/img/7.PNG" width="300" />
+
+Para la conexión con el servidor, se debe añadir al security group una regla que acepte conexiones TCP entrantes y salientes con el puerto 1234.
+A continuación se debe instalar _socat_ en el servidor:
+```
+sudo apt-get install socat
+```
+
+
 ## 5. Funcionamiento de la aplicación.
 
 Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos la siguiente interfaz:
@@ -202,7 +213,7 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 <img src="/res/img/6.png" width="300" />
 
 #### 1. En este campo ingresaremos la dirección IP a la que queremos conectarnos.
-#### 2. De igual forma, en este campo especificamos el puerto del servidor.
+#### 2. De igual forma, en este campo especificamos el puerto del servidor (en el servidor está establecido el puerto 1234).
 #### 3. Aquí tenemos la opción de añadir palabras clave para poder filtrar los logs. Las keywords deben estar separadas por comas.
 #### 4. El botón _SYSTEM APPS_ desplegará los paquetes del sistema. Aquellos paquetes seleccionados se añadiran al filtro.
 #### 5. El botón _USER APPS_ desplegará los paquetes de las aplicaciones instaladas por el usuario. Aquellas aplicaciones seleccionadas se añadiran al filtro.
@@ -226,14 +237,36 @@ Una vez instalemos la .apk del repositorio y abramos la aplicación, obtendremos
 <img src="/res/img/results.jpg" width="300" />
 
 ## 6. Funcionamiento del servidor
+El script _connection.sh_ es básicamente un comando _socat_ que redirecciona el tráfico TCP obtenido por el puerto 1234 a localhost por el puerto 9999.
+Esto permite que la IP del móvil no sea relevante para el servidor, cualquiera se puede conectar.
 
+El _analyser.py_ es un archivo que ejecuta un spark streaming. Mediante un socket va recibiendo los logs, que filtrará por nivel de log y reducirá según la etiqueta.
+Almacena todos los logs recibidos en _AndroidLogs/_ y el resultado de la reducción en _SuspiciousLogs/_.
+<img src="/res/img/9.PNG" width="300" />
+<img src="/res/img/10.PNG" width="300" />
 
-
+Por último, el script _sendData.sh_ junta el resultado de _SuspiciousLogs/_ en un txt y lo envía por netcat al dispositivo móvil.
 
 ## 7. Modo de uso
+En el servidor requerimos dos pestañas abiertas. En una de ellas debemos tener el script _connection.sh_ ejecutándose.
+
+Seguidamente ejecutaríamos el spark streaming en la otra pestaña con:
+´´´
+spark-submit analyser.py localhost 9999
+´´´
+
+Va a estar devolviendo errores hasta que no haga conexión, por lo que configuramos la aplicación móvil y pulsamos el botón _START_.
+Pasados 8 segundos (hemos puesto un sleep por si acaso), empezarán a llegar logs, que se imprimirán por pantalla.
+<img src="/res/img/8.PNG" width="300" />
+
+Cuando el usuario desee pararlo, debe pulsar el botón _STOP_ y después interrumpir la ejecución de spark y del script _connection.sh_ con Ctrl^C.
+
+Por último, ejecutar el script _sendData.sh_ y pulsar el botón _GET RESULTS_ en el móvil. Pasado un tiempo se recibirán en el dispositivo y se imprimirán en forma de alerta.
+
 
 ## 8. Conclusión
 ------------------------------------------------------------
+
 
 ## Herramientas utilizadas
 
